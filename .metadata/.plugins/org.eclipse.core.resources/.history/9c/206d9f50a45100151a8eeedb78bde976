@@ -1,0 +1,84 @@
+ Skip to content
+Please note that GitHub no longer supports old versions of Firefox.
+
+We recommend upgrading to the latest Safari, Google Chrome, or Firefox.
+This repository
+
+    Pull requests
+    Issues
+    Gist
+
+    @rahulwwindia
+
+    3
+    0
+    0
+
+brightinteractive/spring-mvc-tiles-freemarker-prototype
+
+spring-mvc-tiles-freemarker-prototype/src/main/webapp/WEB-INF/view/ftl/layout.ftl
+Fetching contributors…
+
+53 lines (46 sloc) 0.773 kB
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tiles 3 with Spring 3 with JSP</title>
+<style type="text/css">
+body {
+font-family: Arial, Verdana, sans-serif;
+}
+.header,.footer,.leftPane,.rightPane {
+border: 1px solid gray;
+}
+.header,.main,.footer {
+width: 960px;
+color: #665544;
+margin: 0px auto;
+clear: both;
+}
+.leftPane,.rightPane {
+float: left;
+margin: 10px;
+height: 400px;
+}
+.leftPane {
+width: 100px;
+}
+.rightPane {
+width: 815px;
+}
+.leftMenu {
+list-style: none;
+padding: 0;
+margin: 10px;
+}
+</style>
+</head>
+<body>
+<@tiles.insertAttribute name="header" />
+<div class="main">
+<@tiles.insertAttribute name="menu" />
+<div class="rightPane">
+<@tiles.insertAttribute name="body" />
+</div>
+</div>
+<@tiles.insertAttribute name="footer" />
+</body>
+</html>
+
+    Status
+    API
+    Training
+    Shop
+    Blog
+    About
+    Pricing
+
+    © 2015 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Contact
+    Help
+

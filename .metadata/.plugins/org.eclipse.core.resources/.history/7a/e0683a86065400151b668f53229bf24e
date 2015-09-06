@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<definition name=".mainTemplate" template="/WEB-INF/views/main/bodyTemplate.ftl">
+		<put-attribute name="header" value="/WEB-INF/tiles/header.ftl" />
+		<put-attribute name="body" value=""></put-attribute>
+		<put-attribute name="right" value="/WEB-INF/tiles/right.ftl" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.ftl" />
+	</definition>
+
+	<definition name="home" extends=".mainTemplate">
+	<!-- 	<put-attribute name="body" value="/WEB-INF/views/home/home.ftl" /> -->
+	</definition>	
+
+</tiles-definitions>   
